@@ -16,3 +16,31 @@ form {
   width: 120px;            /* ширина колонки з текстом */
   font-weight: bold;
 }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 1;                 /* поле розтягується на решту простору */
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
