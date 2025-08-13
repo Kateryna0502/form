@@ -4,51 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <form>
-    <label for="name">Повне ім'я</label>
-    <input type="text" id="name" name="name" required>
+    <div class="form-group">
+        <label for="name">Повне ім'я</label>
+        <input type="text" id="name" name="name" required>
+    </div>
     
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
 
-    <label for="password">Пароль</label>
-    <input type="password" id="password" name="password" required>
+    <div class="form-group">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required>
+    </div>
 
-    <label for="password again">Пароль ще раз</label>
-    <input type="password again" id="password again" name="password again" required>
+    <div class="form-group">
+        <label for="password again">Пароль ще раз</label>
+        <input type="password again" id="password again" name="password again" required>
+    </div>
     
+    <div class="form-group">
+        <label>
+        <input type="radio" name="gender" value="male" required> чоловіча
+        </label>
+    </div>
+
+<div class="form-group">
     <label>
-    <input type="radio" name="gender" value="male" required> чоловіча
-</label>
+        <input type="radio" name="gender" value="female"> жіноча
+    </label>
+</div>
 
-<label>
-    <input type="radio" name="gender" value="female"> жіноча
-</label>
+<div class="form-group">
+    <label for="age">Вік</label>
+        <input type="number" id="age" name="age" required>
+</div>
 
-<label for="age">Вік</label>
-    <input type="number" id="age" name="age" required>
+    <div class="form-group">
+        <label>Курс:
+        <select name="course" required>
+          <option value="">-=Виберіть курс=-</option>
+          <option>Front-End</option>
+          <option>Back-End</option>
+          <option>Project Management</option>
+          <option>QA Manual</option>
+        </select>
+          </label>
+    </div>
 
-    <label>Курс:
-    <select name="course" required>
-      <option value="">-=Виберіть курс=-</option>
-      <option>Front-End</option>
-      <option>Back-End</option>
-      <option>Project Management</option>
-      <option>QA Manual</option>
-    </select>
-  </label>
+    <div class="form-group">
+        <label for="address">Повна адреса</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+    </div>
 
-    <label for="address">Повна адреса</label>
-    <textarea id="address" name="address" rows="3" required></textarea>
-
-    <label>
-    <input type="checkbox" name="privacy" required>Я погоджуюсь з обробкою персональних даних 
-</label>
+    <div class="form-group">
+        <label>
+        <input type="checkbox" name="privacy" required>Я погоджуюсь з обробкою персональних даних 
+        </label>
+    </div>
     
-    <button type="reset">Очистити форму</button>
-  <button type="submit">Зареєструватись</button>
+    <div class="buttons">
+        <button type="reset">Очистити форму</button>
+          <button type="submit">Зареєструватись</button>
+    </div>
   </form>  
 </body>
 </html>

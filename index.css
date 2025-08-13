@@ -1,0 +1,18 @@
+form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  display: flex;           /* розташування в рядок */
+  align-items: center;     /* вертикальне вирівнювання */
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  width: 120px;            /* ширина колонки з текстом */
+  font-weight: bold;
+}
