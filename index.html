@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+    <label for="name">Повне ім'я</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Пароль</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="password again">Пароль ще раз</label>
+    <input type="password again" id="password again" name="password again" required>
+    
+    <label>
+    <input type="radio" name="gender" value="male" required> чоловіча
+</label>
+
+<label>
+    <input type="radio" name="gender" value="female"> жіноча
+</label>
+
+<label for="age">Вік</label>
+    <input type="number" id="age" name="age" required>
+
+    <label>Курс:
+    <select name="course" required>
+      <option value="">-=Виберіть курс=-</option>
+      <option>Front-End</option>
+      <option>Back-End</option>
+      <option>Project Management</option>
+      <option>QA Manual</option>
+    </select>
+  </label>
+
+    <label for="address">Повна адреса</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <label>
+    <input type="checkbox" name="privacy" required>Я погоджуюсь з обробкою персональних даних 
+</label>
+    
+    <button type="reset">Очистити форму</button>
+  <button type="submit">Зареєструватись</button>
+  </form>  
+</body>
+</html>
+
+<label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
