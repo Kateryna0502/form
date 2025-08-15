@@ -22,10 +22,10 @@ form {
   }
 }
 
-/* .adress {
-display: flex;
+.adress {
+
 align-items: flex-end;
-}  */
+} 
 
 option,
 select,
