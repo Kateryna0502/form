@@ -12,31 +12,30 @@
     <form>
         <div id="line-name">
             <div class="form-group">
-                <label for="name">Повне ім'я</label>
+                <label for="name" class="line">Повне ім'я</label>
                 <input type="text" id="name" name="name" required>
             </div>
 
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email" class="line">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-group">
-                <label for="password">Пароль</label>
+                <label for="password" class="line">Пароль</label>
                 <input type="password" id="password" name="password" required>
             </div>
 
             <div class="form-group">
-                <label for="password again">Пароль ще раз</label>
+                <label for="password again" class="line">Пароль ще раз</label>
                 <input type="password again" id="password again" name="password again" required>
             </div>
         </div>
 
         
 
-        <div class="box">
             <div class="form-group">
-                <span>Стать</span>
+                <div class="line">Стать</div>
                 <div class="gender-group">
                     <input type="radio" id="man" name="gender" value="чоловіча" checked>
                     <label for="man">чоловіча</label>
@@ -45,31 +44,32 @@
                     
                 </div>
             </div>
+
             <div class="form-group">
-                <label for="age">Вік</label>
-                <input type="number" id="age" name="age" min="0" max="100" required>
+                <label for="age" class="line">Вік</label>
+                <input type="number" id="age" name="age" min="0" max="100" size="5" required>
             </div>
+
             <div class="form-group">
-                <label for="course">Курс</label>
+                <label for="course" class="line">Курс </label>
                 <select id="course" name="course" required>
-                    <option value="" disabled selected hidden>-=Виберіть курс=-</option>
+                    <option value="" selected disabled hidden>-=Виберіть курс=-</option>
                     <option value="frontend">Front-End</option>
                     <option value="backend">Back-End</option>
                     <option value="pm">Project Management</option>
                     <option value="qa">QA Manual</option>
                 </select>
             </div>
-        </div>
 
 
         <div class="form-group">
-            <span>Повна адреса</span>
+            <label for="address" class="line">Повна адреса</label>
             <textarea id="address" name="address" rows="3" required
                 placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
         </div>
         
 
-        <div id="sign-in">
+        <div class="form-group">
             <input type="checkbox" name="privacy" required>
             <label for="privacy">Я погоджуюсь з обробкою персональних даних</label>
 
