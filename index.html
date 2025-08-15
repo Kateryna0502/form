@@ -10,7 +10,6 @@
 
 <body>
     <form>
-        <div id="line-name">
             <div class="form-group">
                 <label for="name" class="line">Повне ім'я</label>
                 <input type="text" id="name" name="name" required>
@@ -30,7 +29,6 @@
                 <label for="password again" class="line">Пароль ще раз</label>
                 <input type="password again" id="password again" name="password again" required>
             </div>
-        </div>
 
         
 
@@ -64,14 +62,14 @@
 
         <div class="form-group">
             <label for="address" class="line">Повна адреса</label>
-            <textarea id="address" name="address" rows="3" required
+            <textarea id="address" class="address" name="address" rows="3" required
                 placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
         </div>
         
 
         <div class="form-group">
-            <input type="checkbox" name="privacy" required>
-            <label for="privacy">Я погоджуюсь з обробкою персональних даних</label>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
 
         </div>
 
